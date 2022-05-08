@@ -42,7 +42,7 @@ class PostsListTestClass(TestCaseBase):
     def test_get_posts(self):
         """Страница с постами подписок"""
         response = self.client.get(
-            reverse('posts_list-list'),
+            reverse('posts-list-list'),
             **self.bearer_token
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
