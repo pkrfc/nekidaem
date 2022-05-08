@@ -49,7 +49,9 @@ class FollowSerializer(serializers.ModelSerializer):
             ),
         ]
 
+
 class PostListSerializer(serializers.ModelSerializer):
     class Meta:
-        fields = '__all__'
+        fields = ['id', 'text', 'title', 'author', 'views_user']
+        read_only_fields = ['id', 'text', 'title', 'author']
         model = Post
