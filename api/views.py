@@ -1,11 +1,12 @@
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
+from rest_framework.mixins import ListModelMixin, UpdateModelMixin
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from rest_framework.viewsets import GenericViewSet, ModelViewSet
-from rest_framework.mixins import ListModelMixin, UpdateModelMixin
+
 from posts.models import Follow, Post
 
-from .serializers import FollowSerializer, PostSerializer, PostListSerializer
+from .serializers import FollowSerializer, PostListSerializer, PostSerializer
 
 
 class PostViewSet(ModelViewSet):
@@ -45,7 +46,11 @@ class PostsListViewSet(GenericViewSet, UpdateModelMixin, ListModelMixin):
         followed_people = Follow.objects.filter(
             user=self.request.user).values('following'
                                            )
-        return Post.objects.filter(author__in=followed_people).exclude(views_user=self.request.user)
+        return Post.objects.filter(
+            author__in=followed_people
+        ).exclude(
+            views_user=self.request.user
+        )
 
     def perform_update(self, serializer):
         serializer.save(views_user=self.request.user)

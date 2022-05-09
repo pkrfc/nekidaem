@@ -4,8 +4,6 @@ from rest_framework import status
 from rest_framework.test import APITestCase
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from posts.models import Follow
-
 User = get_user_model()
 
 
@@ -66,7 +64,3 @@ class FollowTestClass(TestCaseBase):
             **self.bearer_token
         )
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-
-
-
-

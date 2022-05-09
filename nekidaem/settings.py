@@ -1,20 +1,18 @@
-from pathlib import Path
-from datetime import timedelta
-from dotenv import load_dotenv
 import os
+from datetime import timedelta
+from pathlib import Path
+
+from dotenv import load_dotenv
 
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 SECRET_KEY = 'django-insecure-m$9dsmnb=kw8^gv4t%1%ea_d^xmcf9prpaimxex6u#w-hszhac'
-
 
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -29,6 +27,7 @@ INSTALLED_APPS = [
     'djoser',
     'rest_framework_simplejwt',
     'django_filters',
+
 ]
 
 MIDDLEWARE = [
@@ -46,8 +45,7 @@ ROOT_URLCONF = 'nekidaem.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
