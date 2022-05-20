@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3afdc759-19eb-416f-ab20-bd44200b4639" name="Changes" comment="update urls">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="3afdc759-19eb-416f-ab20-bd44200b4639" name="Changes" comment="requirements update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Dev/CodeWars" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -107,7 +107,10 @@
       <workItem from="1652121952991" duration="50000" />
       <workItem from="1652122031288" duration="13000" />
       <workItem from="1652122046765" duration="63000" />
-      <workItem from="1652122149019" duration="305000" />
+      <workItem from="1652122149019" duration="1293000" />
+      <workItem from="1652261106794" duration="1218000" />
+      <workItem from="1652288901939" duration="6000" />
+      <workItem from="1652352643588" duration="717000" />
     </task>
     <task id="LOCAL-00001" summary="settings database, apps">
       <created>1652010851531</created>
@@ -235,7 +238,28 @@
       <option name="project" value="LOCAL" />
       <updated>1652122376581</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="    update models Post">
+      <created>1652122733135</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1652122733135</updated>
+    </task>
+    <task id="LOCAL-00020" summary="readme">
+      <created>1652122755890</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1652122755890</updated>
+    </task>
+    <task id="LOCAL-00021" summary="requirements update">
+      <created>1652352740950</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1652352740950</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +295,9 @@
     <MESSAGE value="v 2.0 / PEP8" />
     <MESSAGE value="update requirements" />
     <MESSAGE value="update urls" />
-    <option name="LAST_COMMIT_MESSAGE" value="update urls" />
+    <MESSAGE value="    update models Post" />
+    <MESSAGE value="readme" />
+    <MESSAGE value="requirements update" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements update" />
   </component>
 </project>
